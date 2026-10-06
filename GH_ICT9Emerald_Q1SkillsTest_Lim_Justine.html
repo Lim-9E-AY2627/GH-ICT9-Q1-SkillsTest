@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Q1 Skills Test</title>
+
+  <style>
+    .body{
+      background-color: aliceblue;
+      background-image: url(https://www.thedailyupside.com/wp-content/uploads/2025/02/cio_humanoid-robot_02-10-25_iStock-iLexx.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .form{
+      background: #fef9f9;
+      padding: 15px;
+      margin: 20px auto;
+      border-radius: 15px;
+      max-width: 500px;
+    }
+
+    h1{
+      text-align: center;
+      text-decoration: underline;
+      font-family: sans-serif;
+    }
+
+    h5{
+      font-family: sans-serif;
+      margin-top: 15px;
+      margin-bottom: 8px;
+    }
+
+    img{
+      width: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .ombc-logo{
+      margin: auto;
+      width: 150px;
+    }
+
+    .top-activitys{
+      font-family: sans-serif;
+      margin-top: 18px;
+    }
+
+    /* keep inputs inside card readable like the sample */
+    input, select, textarea, button{
+      width: 100%;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    textarea{
+      min-height: 80px;
+      padding: 8px;
+    }
+
+    button{
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body class="body">
+
+  <!-- Logo -->
+  <div class="form">
+    <div class="obmc-logo">
+    <img src="data:image/png;base64,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" alt="logo">
+  </div>
+
+  <!-- 2. Hero Section -->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>OBMC robotics club application form</h1>
+    </div>
+  </div>
+
+  <!-- 3. Welcome Text -->
+  <p>Welcome! Please fill out this form to apply for our school's robotics club.</p>
+
+  <!-- 4. The Form -->
+  <div class="form">
+    <form>
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email Address">
+      <button type="submit">Apply Now</button>
+    </form>
+  </div>
+</body>
+</p>
+<form>
+  <fieldset>
+    <legend>Your Infromation</legend>
+
+    <!-- NAME -->
+    <label for="full-name">Full Name:</label>
+    <input type="text" placeholder="Enter Your Full-Name">
+    <br><br>
+
+    <!-- EMAIL -->
+    <label for="Email-Address">Email:</label>
+    <input type="email" placeholder="Enter Your Email Address">
+    <br><br>
+
+    <!-- GRADE LEVEL -->
+    <h5>Grade Level</h5>
+    <select>
+      <option value="Grade-7">Grade-7</option>
+      <option value="Grade-8">Grade-8</option>
+      <option value="Grade-9">Grade-9</option>
+      <option value="Grade-10">Grade-10</option>
+    </select>
+
+    <h5>Gender</h5>
+
+    <!-- Male -->
+    <input type="radio" name="Gender" id="Male">
+    <label for="Male">Male:</label>
+    <br>
+
+    <!-- Female -->
+    <input type="radio" name="Gender" id="Female">
+    <label for="Female">Female:</label>
+    <br><br>
+
+    <h5>What are your Skills?</h5>
+    <!-- Coding -->
+     <!-- Skills -->
+<h5>What are your Skills?</h5>
+
+<div>
+  <input type="checkbox" name="skills" id="coding">
+  <label for="coding">Coding</label>
+</div>
+
+<div>
+  <input type="checkbox" name="skills" id="design">
+  <label for="design">Design</label>
+</div>
+
+<div>
+  <input type="checkbox" name="skills" id="electronic">
+  <label for="electronic">Electronic</label>
+</div>
+
+<br>
+
+<!-- Delivery Instructions -->
+<label for="reason-for-joining">Tell us why you want to join:</label>
+<textarea name="directions" placeholder="Reason For Joining" id="reason-for-joining"></textarea>
+
+<h5 class="Top-activitys">Top Robotics Activities We Offer:</h5>
+<ul>
+  <li>Following Robots</li>
+  <li>Obstacle Avoidance Programming</li>
+  <li>Light Following Robots</li>
+</ul>
+
+<h5 class="Top-activitys">Helpful Link:</h5>
+<ol>
+    <li style="font-size: 20px;"> <a href="https://www.automate.org/robotics">Robotics.Org</a></li>
+   <li style="font-size: 20px;"> <a href="https://www.firstinspires.org/">FIRST Robotics</a></li>
+
+   </ol>
+<input type="submit" value="Submit Application">
+
+
+</div>
+
+
+
+
+</body>
+</html>
+
